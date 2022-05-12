@@ -1,0 +1,71 @@
+//char str1[line.size()];
+				
+				char str1[line.length() + 1];
+				char str2[line.length() + 1];
+				   /* cout<<"String to char array conversion:\n";*/
+				    for (int x = 0; x < sizeof(str1); x++) { 
+				        str1[x] = line[x]; 
+				        //cout << str1[x]; 
+				    } 
+				
+			//	strcpy(str2,str1);
+				char *sub;
+				char palabra[] = "entero";
+				sub = strstr(str1,"int");
+				if(sub != NULL){
+					strncpy(sub,"   ",1);
+					cout<<palabra;
+					cout<<str1;
+					
+				}
+				//cout<<line<<endl;
+
+
+
+
+/******************************************************************************
+
+                              Online C++ Compiler.
+               Code, Compile, Run and Debug C++ program online.
+Write your code in this editor and press "Run" button to compile and execute it.
+
+*******************************************************************************/
+
+#include <iostream>
+#include <string.h>
+using namespace std;
+
+int main()
+{
+  string str ("int main() if(n1>0)");
+  string str2 ("int");
+  string nueva= "entero";
+  int tam = str2.length();
+  // different member versions of find in the same order as above:
+  size_t found = str.find(str2);
+  if (found!=string::npos){
+    //cout << "primer int encontrado en " << found << '\n';
+    str.replace(found,tam,nueva);
+    cout<<str;
+  }
+ 
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,19 @@
+int main(){
+	string continuar;
+	int valor=01;
+	if(n1>10){
+	llamada(n1);
+	}
+	else if(n1<10){
+	llamada(n2);
+	}
+	cout<<"Desea continuar si/no:";
+	cin>>continuar;
+	if(continuar=="si"){
+		cout<<"Gracias.."<<endl;
+	}
+	else{
+		exit(1);
+	}
+	return();
+}
